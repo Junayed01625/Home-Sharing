@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="script.js">
+
+    </script>
   <link rel="shortcut icon" type="image/x-icon" href="img/Wedding Couple.png">
-  <title>Wedding Service</title>
+  <title>Home Sharing</title>
 </head>
 <body>
 
@@ -66,7 +69,7 @@
               echo ErrorMessage();
               echo SuccessMessage();
          ?>
-        <form class="form-group" action="reg_backend.php" method="post" enctype="multipart/form-data"> <!--enctype for image extraction-->
+        <form class="form-group" name="myforms" onsubmit="return form_validation()" action="reg_backend.php" method="post" enctype="multipart/form-data"> <!--enctype for image extraction-->
 
            <div class="form-group">
            <label class="text-primary" for="">User Name</label>
@@ -126,7 +129,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <p class="lead mb-0">Copyright 2019 &copy; Kh Shohag</p>
+        <p class="lead mb-0">Copyright 2019 &copy; Home Sharing</p>
       </div>
     </div>
   </div>
