@@ -1,10 +1,9 @@
   function form_validation(){
     var x = document.forms["myforms"]["uname"].value;
-    var y = document.forms["myforms"]["pass"].value;
-    var z = document.forms["myforms"]["cpass"].value;
+    var y = document.forms["myforms"]["password"].value;
+    var z = document.forms["myforms"]["conpassword"].value;
     var m = document.forms["myforms"]["name"].value;
-    var n = document.forms["myforms"]["gender"].value;
-    var o = document.forms["myforms"]["con"].value;
+    var n = document.forms["myforms"]["phone"].value;
     if (m=="") {
       alert("Name must be filled out");
     }
@@ -26,12 +25,7 @@
       alert("Password must be 8-32 charecters");
     }
     if (n=="") {
-      alert("Gender must be select");
+      alert("Phone no. must be needed");
     }
-    if (typeof o != 'number') {
-      alert("Contact no is must be no.");
-    }
-
-
 
   }
