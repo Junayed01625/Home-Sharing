@@ -13,31 +13,43 @@
   <title>Home Sharing</title>
 </head>
 <body>
-  <nav class="navbar navbar-light navbar-expand-md py-3 fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand mt-2">
-        <img src="img/mlogo1.png" class="img-fluid" width="120"height="120" alt="M">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link " href="#showcase">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#authors">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+
+    <!--NavBar-->
+   <nav class="navbar navbar-dark navbar-expand-md "  uk-sticky="top: 200; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+     <!--navbar-expand-md for horizontal nav on medium to upper --> <!--navbar-dark for text white -->
+     <div class="container ">
+       <a href="index.html" class="navbar-brand text-primary pr-6 mr-3 "><h1 class="text-primary">Home Sharing</h1></a>
+       <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarnav">
+         <!--navbar-toggler to bring toggler on small device -->
+         <!--data-target="#nav1" to call an id nav1 form div below.... small device -->
+         <span class="navbar-toggler-icon"></span>
+         <!--navbar-toggler-icon to bring toggler icon on small device -->
+
+       </button>
+       <div id="navbarnav" class="collapse navbar-collapse ">
+         <!--collapse to remove home,... from nav.. small device fact -->
+         <ul class="navbar-nav  ml-auto"><!--navbar-nav to remove bulletpoint from nav -->
+           <li class="nav-item ">    <!--active to make the home icon actv in nav-->
+             <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="services.html">Services</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="About.html">About Us</a>
+           </li>
+          <li class="nav-item ">
+             <a class="nav-link" href="Contact.html">Contact</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="login_UI.php">Account</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="admin_login.php">Admin</a>
+               </li>
+         </ul>
+       </div>
+     </div>
   </nav>
 
   <!--About US-->
@@ -230,4 +242,3 @@
     <script src="js/navbar-fixed.js"></script>
   </body>
   </html>
-
